@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <
+    <title>Mapa</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+        }
+        .boneco{
+            position: absolute;
+            top: 440px;
+            left: 550px;
+            width: 80px;
+        }
+        .texto_SC{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            width: 320px;
+            height: 200;
+            font-size: 18px;
+            text-align: justify;
+            background-color: lightgreen;
+            box-shadow: 1px 1px black;
+            padding: 10px;
+        }
+        .texto_RS{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            width: 320px;
+            height: 200;
+            font-size: 18px;
+            text-align: justify;
+            background-color: lightgreen;
+            box-shadow: 1px 1px black;
+            padding: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+
+    <map name="meu_mapa">
+        <area shape="circle" coords="260,440,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" targent="_blank" area onmouseleave="Esconder();" onmouseover="MostraTexto('RS');">
+        <area shape="circle" coords="297,413,20" href="https://pt.wikipedia.org/wiki/Santa_Catarina" targen="_blank" area onmouseleave="Esconder();" onmouseover="MostraTexto('SC');">
+        <area shape="circle" coords="280,376,20" href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank">
+        <area shape="circle" coords="313,348,20" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" targent="_blank">
+        <area shape="circle" coords="399,364,20" href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro" targent="_blank">
+        <area shape="circle" coords="428,325,20" href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)" targent="_blank">
+        <area shape="circle" coords="364,312,20" href="https://pt.wikipedia.org/wiki/Minas_Gerais" targent="_blank">
+        <area shape="circle" coords="239,326,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" targent="_blank">
+        <area shape="circle" coords="299,274,20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" targent="_blank">
+        <area shape="circle" coords="349,271,20" href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)" targent="_blank">
+        <area shape="circle" coords="230,234,20" href="https://pt.wikipedia.org/wiki/Mato_Grosso" targent="_blank">
+        <area shape="circle" coords="396,225,20" href="https://pt.wikipedia.org/wiki/Bahia" targent="_blank">
+        <area shape="circle" coords="319,196,20" href="https://pt.wikipedia.org/wiki/Tocantins" targent="_blank">
+        <area shape="circle" coords="471,222,20" href="https://pt.wikipedia.org/wiki/Sergipe" targent="_blank">
+        <area shape="circle" coords="484,206,20" href="https://pt.wikipedia.org/wiki/Alagoas" targent="_blank">
+        <area shape="circle" coords="447,180,20" href="https://pt.wikipedia.org/wiki/Pernambuco" targent="_blank">
+        <area shape="circle" coords="476,165,20" href="https://pt.wikipedia.org/wiki/Para%C3%ADba" targent="_blank">
+        <area shape="circle" coords="471,148,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" targent="_blank">
+        <area shape="circle" coords="429,136,20" href="https://pt.wikipedia.org/wiki/Cear%C3%A1" targent="_blank">
+        <area shape="circle" coords="388,169,20" href="https://pt.wikipedia.org/wiki/Piau%C3%AD" targent="_blank">
+        <area shape="circle" coords="359,133,20" href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o" targent="_blank">
+        <area shape="circle" coords="265,133,20" href="https://pt.wikipedia.org/wiki/Par%C3%A1" targent="_blank">
+        <area shape="circle" coords="277,52,20" href="https://pt.wikipedia.org/wiki/Amap%C3%A1" targent="_blank">
+        <area shape="circle" coords="158,45,20" href="https://pt.wikipedia.org/wiki/Roraima" targent="_blank">
+        <area shape="circle" coords="121,119,20" href="https://pt.wikipedia.org/wiki/Amazonas" targent="_blank">
+        <area shape="circle" coords="41,186,20" href="https://pt.wikipedia.org/wiki/Acre" targent="_blank">
+        <area shape="circle" coords="138,207,20" href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia" targent="_blank">
+    </map>
+
+    <img src="mapa_brasil.jpg" class="mapa" id="mapa" usemap="#meu_mapa">
+    <img src="boneco.gif" class="boneco" id="boneco">
+
+    <div class="texto_SC" id="texto_SC">
+        Santa Catarina é um estado na região sul do Brasil. 
+        Com uma longa costa com o Atlântico e muitas ilhas, ela é conhecida por suas praias e montanhas. 
+        Florianópolis, a capital, tem um mercado público tradicional com bares, restaurantes e barracas de comida, 
+        além de um museu histórico instalado em um palácio do governo colonial do século 19.
+    </div>
+
+    <div class="texto_RS" id="texto_RS">
+        Rio Grande do Sul é o estado mais a sul do Brasil e faz fronteira com a Argentina e o Uruguai. 
+        A nordeste, a montanhosa Serra Gaúcha alberga a região vinícola do Vale dos Vinhedos e 
+        inclui cidades turísticas de estilo alemão como Gramado e Canela, famosas pelas paisagens naturais pitorescas. 
+        Porto Alegre, a capital, é um grande porto com estruturas clássicas como o Mercado Público 
+        e a Catedral Metropolitana, no centro histórico.
+    </div>
+</body>
+<script>
+    function Esconder()
+    {
+        texto_RS.style.display = "none";
+        texto_SC.style.display = "none";
+    }
+    function MostraTexto(estado)
+    {
+        if(estado == "RS")
+        {
+            texto_RS.style.display = "block";
+        }
+        if(estado == "SC")
+        {
+            texto_SC.style.display = "block";
+        }
+    }
+</script>
+</html>
